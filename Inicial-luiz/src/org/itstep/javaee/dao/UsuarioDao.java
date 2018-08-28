@@ -7,5 +7,5 @@ import org.itstep.javaee.model.Usuario;
 
 public interface UsuarioDao {
 	public Usuario create(Usuario usuario) throws DaoException;
-	public List<Usuario> findByAll() throws DaoException; 
+	public List<Usuario> findByAll() throws DaoException;
 }

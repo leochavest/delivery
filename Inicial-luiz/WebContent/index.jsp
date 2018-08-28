@@ -9,14 +9,14 @@
 <title>Delivery Login</title>
 <style type="text/css">
 #main {
-	width: 800px;
+	width: 1000px;
 	padding: 0;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 #header {
-	height: 50px;
+	height: 70px;
 	background-color: #F5F5F5;
 	border: 1px solid #CDCDCD;
 	margin-bottom: 5px;
@@ -69,9 +69,6 @@
 <body>
 <div id="header"><jsp:include page="header.jsp"></jsp:include></div>
 	<div id="main">
-		<div id="head">
-			<img src="images/banner.jpg" width="800px" height="100px" />
-		</div>
 		<div id="corpo">
 			<div>
 				<form name="Insert" action="UsuarioServlet">
@@ -82,7 +79,6 @@
 							<th>CPF</th>
 							<th>Telefone</th>
 							<th>Endereço</th>
-							<th>Pedido</th>
 							<th>Inclusão</th>
 						</tr>
 						<tr align="center">
@@ -90,7 +86,6 @@
 							<td><input type="text" name="cpf" /></td>
 							<td><input type="text" name="telefone" /></td>
 							<td><input type="text" name="endereco" /></td>
-							<td><input type="text" name="pedido" /></td>
 							<td><input type="submit" value="Incluir" /></td>
 						</tr>
 					</table>
@@ -103,7 +98,6 @@
 						<th>CPF</th>
 						<th>Telefone</th>
 						<th>Endereço</th>
-						<th>Pedido</th>
 						<th>Atualizar</th>
 						<th>Excluir</th>
 					</tr>

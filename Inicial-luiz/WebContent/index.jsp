@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>It Step - Viagens</title>
+<title>Delivery Login</title>
 <style type="text/css">
 #main {
 	width: 800px;
@@ -15,8 +15,8 @@
 	margin-right: auto;
 }
 
-#cabecalho {
-	height: 100px;
+#header {
+	height: 50px;
 	background-color: #F5F5F5;
 	border: 1px solid #CDCDCD;
 	margin-bottom: 5px;

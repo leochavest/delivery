@@ -9,22 +9,36 @@
 <body>
 	<div id="head-link">
 		<div id='menungang'>
-			<ul>
-				<a href="index.jsp"><span>Home </span></a>
-				<a href="cardapio.jsp"><span>Cardapio </span></a>
-				<c:choose>
-					<c:when test="{not empty username}">
-						<a href="pedido.jsp"><span>Pedido </span></a>
-						<a href="LogoutServlet"><span>Sair </span></a>
-						<a href="update_user.jsp?username=${username}"><span>${username}</span></a>
-					</c:when>
-					<c:when test="{empty username}">
-						<a href="search_page.jsp"><span>Pesquisa </span></a>
-						<li class='last' style="float: right;"><a href="register.jsp"><span>Registro</span></a></li>
-						<li class='last' style="float: right;"><a href="login.jsp"><span>Login</span></a></li>
-					</c:when>
-				</c:choose>
-			</ul>
+			<h4>
+				<li class='last' style="float: left;"><a href="home.jsp"><span>  Home      </span></a>
+			</h4>
+			<h4>
+				<li class='last' style="float: left;"><a href="cardapio.jsp"><span>   Cardapio    </span></a>
+			</h4>
+			<c:choose>
+				<c:when test="{not empty username}">
+					<h4>
+						<li class='last' style="float: left;"><a href="pedido.jsp"><span>Pedido </span></a>
+					</h4>
+					<h4>
+						<li class='last' style="float: left;"><a href="LogoutServlet"><span>Sair </span></a>
+					</h4>
+					<h4>
+						<li class='last' style="float: left;"><a href="update_user.jsp?username=${username}"><span>${username}</span></a>
+					</h4>
+				</c:when>
+				<c:when test="{empty username}">
+					<h4>
+						<li class='last' style="float: right;"><a href="register.jsp"><span>
+									Registro </span></a></li>
+					</h4>
+					<h4>
+						<li class='last' style="float: right;"><a href="index.jsp"><span>
+									Login </span></a></li>
+					</h4>
+				</c:when>
+			</c:choose>
+
 		</div>
 	</div>
 </body>
